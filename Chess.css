@@ -1,0 +1,166 @@
+* {
+	background-color: #FFDEAD;
+	overflow-y: scroll;
+}
+
+
+.Navigation {
+	background-color: #F4A460;
+	border-style: double;
+
+	/* Center Horizontally */
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Links */
+.Navigation a {
+	/* Spacing btw Links */
+	margin-right: 10px;
+
+	border-style: dashed;
+	border-width: 2px;
+	font-size: 17px;
+}
+
+
+.Contacts {
+	background-color: #F4A460;
+	border-style: double;
+
+	/* Center Horizontally */
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Links */
+.Contacts a {
+	/* Spacing btw Links */
+	margin-right: 10px;
+
+	border-style: dashed;
+	border-width: 2px;
+	font-size: 17px;
+}
+
+
+.Posts {
+	background-color: #F4A460;
+	border-style: double;
+}
+
+
+h1, h2, h4 {
+	background-color: #F4A460;
+	border-style: double;
+	text-align: center;
+}
+
+
+/* Top Page Image */
+.BannerImg {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 350px;
+}
+
+
+/* Fun Facts Link Container */
+.linkContainer {
+	background-color: white;
+	border-style: double;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+
+/* Fun Facts Link Items */
+.linkItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  weight: 300px;
+}
+
+
+/* Fun Facts Link Images */
+.linkImages {
+	width: 250px;
+	height: 200px;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+
+/* Search Form Container */
+.formContainer {
+	background-color: #F4A460;
+	border-style: double;
+	margin: 20px 1px 1px 1px;
+}
+
+
+/* Search Form Container Input Elements */
+.formContainer input{
+	margin-top: 5px;
+}
+
+
+/* Rating Table */
+table {
+	border-style: solid;
+	border-width: 5px;
+	margin: 20px 20px 20px 20px;
+}
+
+
+/* Rating Table Elements */
+td {
+	text-align: left;
+	padding: 5px;
+	border-style: ridge;
+	border-width: 3px;
+}
+
+
+/* Rating Table Headers */
+th {
+	text-align: left;
+	padding: 5px;
+	border-style: ridge;
+	border-width: 3px;
+	cursor: pointer
+}
+
+
+/* Change color of Header */
+th:hover {
+	background-color: green; 
+}
+
+
+/* Rating Table Rows */
+tr:nth-child(even) {
+	background-color: #D2691E;
+}
+
+
+/* View Password Button */
+.eyeBox {
+	background-image: url("eyeclose.png");
+	background-size: cover;
+}
+
+
+.dropdown {
+	/* Spacing btw Links */
+	margin-right: 10px;
+	border-style: solid;
+	font-size: 17px;
+}
