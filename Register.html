@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+
+	<title>Registration</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="Chess.css"/>
+
+</head>
+
+
+
+<body>
+
+	<!-- Navigation Tabs -->
+	<h4>Navigation Tabs</h4>
+
+	<nav class = "Navigation">
+		<a href = "About.html">About</a>
+		<a href = "ChessHome.html">Home</a>
+		<a href = "FunFacts.html">Fun Facts</a>
+		<select class = "dropdown" name = "contentOptions" id = "contentId" onchange="switchLinks()">
+			<option value = "default" selected disabled hidden>Content Creation</option>
+			<option value = "CreateBlog.php">Blog Entry</option>
+			<option value = "PictureUpload.php">Picture Upload</option>
+			<option value = "GameUpload.php">Game Upload</option>
+		</select>
+		<a href = "Login.html">Login</a>
+		<a href = "Register.html">Register</a>
+	</nav>
+
+
+	<!-- Top Section -->
+	<h1>Register</h1>
+
+	<div class = "BannerImg">
+		<!-- Background Picture  -->
+		<img src="StartingStandoff.jpg" id="BackgroundImgId" alt="Starting Position">
+	</div>
+
+
+	<!-- Middle Section -->
+	<!-- Register -->
+	<form class="formContainer" id="registerFormId" name="registerForm" action="Register.php" method="POST">
+
+		<label for="UsernameId">Username: </label>
+		<input type="text" id="UsernameId" name="username" placeholder="Username"/> <br/>
+
+		<label for="PasswordId">Password: </label>
+		<input type="text" id="PasswordId" name="password" placeholder="Password" oninput="passChecker()"/> <br/>
+		<span id="passStrength"></span>
+
+		<button class="eyeBox" id="eyeboxId" onclick="passVisibility(event); textButtonChange(event);">View</button> <br/>
+
+		<label for="EmailId">Email: </label>
+		<input type="text" id="EmailId" name="email" placeholder="Email"/> <br/>
+
+		<label for="EmailId">Age: </label>
+		<input type="text" id="AgeId" name="age" placeholder="Age"/> <br/>
+
+		<label for="GenderId">Gender: </label>
+		<input type="text" id="GenderId" name="gender" placeholder="Gender"/> <br/>
+
+		<label for="CountryId">Country of Residence: </label>
+		<input type="text" id="countryId" name="country" placeholder="Country"/> <br/>
+
+		<input type="submit" id="submitID" value="Submit"/>
+
+	</form>
+
+
+	<!-- Bottom Section -->
+	<!-- Contacts -->
+	<h4>Contact Information</h4>
+	
+	<nav class = "Contacts">
+		<a href = "">Linkedin</a>
+		<a href = "">GitHub</a>
+		<a href = "">Personal Website</a>
+		<a href = "">Personal Social Media Site</a>
+		<a href = "">History Site</a>
+	</nav>
+
+	<script type="text/javascript" src="ChangeImage.js" ></script>
+	<script type="text/javascript" src="PassStrength.js" ></script>
+	<script type="text/javascript" src="PassVisibility.js"></script>
+	<script type="text/javascript" src="TextButtonChange.js"></script>
+	<script type="text/javascript" src="SwitchLinks.js" ></script>
+
+</body>
+
+</html>

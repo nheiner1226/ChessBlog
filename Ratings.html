@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+
+	<title>Ratings</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="Chess.css"/>
+
+</head><!DOCTYPE html>
+
+
+
+<body>
+
+	<!-- Navigation Tabs -->
+	<h4>Navigation Tabs</h4>
+
+	<nav class = "Navigation">
+		<a href = "About.html">About</a>
+		<a href = "ChessHome.html">Home</a>
+		<a href = "FunFacts.html">Fun Facts</a>
+		<select name = "contentOptions" id = "contentId" onchange="switchLinks()">
+			<option value = "default" selected disabled hidden>Content Creation</option>
+			<option value = "CreateBlog.php">Blog Entry</option>
+			<option value = "PictureUpload.php">Picture Upload</option>
+			<option value = "GameUpload.php">Game Upload</option>
+		</select>
+		<a href = "Login.html">Login</a>
+		<a href = "Register.html">Register</a>
+	</nav>
+
+
+	<div class = "BannerImg">
+		<!-- Background Picture  -->
+		<img src="StartingStandoff.jpg" id="BackgroundImgId" alt="Starting Position">
+	</div>
+
+
+	<!-- Middle Section 1 -->
+	<h2>Ratings Table</h2>
+
+	<p>
+		Click the headers of the table below to sort the columns in either ascending or descending order. 
+	</p>
+
+	<!-- Table -->
+	<table id = "tableId">
+		<thead>
+			<tr>
+				<th class="headerId1" onclick="sortTable(0)">Rank</th>
+				<th class="headerId2" onclick="sortTable(1)">Name</th>
+				<th class="headerId3" onclick="sortTable(2)">Gender</th>
+				<th class="headerId4" onclick="sortTable(3)">Rating</th>
+				<th class="headerId5" onclick="sortTable(4)">Country of Birth</th>
+				<th class="headerId6" onclick="sortTable(5)">Date of Birth</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Magnus Carlsen</td>
+				<td>Male</td>
+				<td>2853</td>
+				<td>Norway</td>
+				<td>1990-11-30</td>
+			</tr>
+
+			<tr>
+				<td>2</td>
+				<td>Ian Nepomniachtchi</td>
+				<td>Male</td>
+				<td>2794</td>
+				<td>Russia</td>
+				<td>1990-07-14</td>
+			</tr>
+
+			<tr>
+				<td>3</td>
+				<td>Ding Liren</td>
+				<td>Male</td>
+				<td>2789</td>
+				<td>China</td>
+				<td>1992-10-24</td>
+			</tr>
+
+			<tr>
+				<td>4</td>
+				<td>Alireza Firouzja</td>
+				<td>Male</td>
+				<td>2785</td>
+				<td>France</td>
+				<td>2003-06-18</td>
+			</tr>
+
+			<tr>
+				<td>5</td>
+				<td>Hikaru Nakamura</td>
+				<td>Male</td>
+				<td>2775</td>
+				<td>America</td>
+				<td>1987-12-09</td>
+			</tr>
+
+			<tr>
+				<td>6</td>
+				<td>Anish Giri</td>
+				<td>Male</td>
+				<td>2768</td>
+				<td>Netherlands</td>
+				<td>1994-06-28</td>
+			</tr>
+
+			<tr>
+				<td>7</td>
+				<td>Fabiano Caruana</td>
+				<td>Male</td>
+				<td>2764</td>
+				<td>America</td>
+				<td>1992-07-30</td>
+			</tr>
+
+			<tr>
+				<td>8</td>
+				<td>Wesley So</td>
+				<td>Male</td>
+				<td>2760</td>
+				<td>America</td>
+				<td>1993-10-09</td>
+			</tr>
+
+			<tr>
+				<td>9</td>
+				<td>Viswanathan Anand</td>
+				<td>Male</td>
+				<td>2754</td>
+				<td>India</td>
+				<td>1968-12-11</td>
+			</tr>
+
+			<tr>
+				<td>10</td>
+				<td>Teimour Radjabov</td>
+				<td>Male</td>
+				<td>2747</td>
+				<td>Azerbaijan</td>
+				<td>1987-03-12</td>
+			</tr>
+
+			<tr>
+				<td>11</td>
+				<td>Levon Aronian</td>
+				<td>Male</td>
+				<td>2745</td>
+				<td>America</td>
+				<td>1982-10-06</td>
+			</tr>
+
+			<tr>
+				<td>12</td>
+				<td>Alexander Grischuk</td>
+				<td>Male</td>
+				<td>2745</td>
+				<td>Russia</td>
+				<td>1983-10-31</td>
+			</tr>
+
+			<tr>
+				<td>13</td>
+				<td>Richard Rapport</td>
+				<td>Male</td>
+				<td>2745</td>
+				<td>Romania</td>
+				<td>1996-03-25</td>
+			</tr>
+
+			<tr>
+				<td>14</td>
+				<td>Maxime Vachier-Lagrave</td>
+				<td>Male</td>
+				<td>2742</td>
+				<td>France</td>
+				<td>1990-10-21</td>
+			</tr>
+
+			<tr>
+				<td>15</td>
+				<td>Leinier Domínguez Pérez</td>
+				<td>Male</td>
+				<td>2739</td>
+				<td>America</td>
+				<td>1983-09-23</td>
+			</tr>
+
+			<tr>
+				<td>16</td>
+				<td>Shahriyar Hamid oghlu Mammadyarov</td>
+				<td>Male</td>
+				<td>2738</td>
+				<td>Azerbaijan</td>
+				<td>1985-04-12</td>
+			</tr>
+
+			<tr>
+				<td>17</td>
+				<td>Parham Maghsoodloo</td>
+				<td>Male</td>
+				<td>2734</td>
+				<td>Iran</td>
+				<td>2000-08-11</td>
+			</tr>
+
+			<tr>
+				<td>18</td>
+				<td>Dommaraju Gukesh</td>
+				<td>Male</td>
+				<td>2732</td>
+				<td>India</td>
+				<td>2006-05-29</td>
+			</tr>
+
+			<tr>
+				<td>19</td>
+				<td>Nodirbek Abdusattorov</td>
+				<td>Male</td>
+				<td>2731</td>
+				<td>Uzbekistan</td>
+				<td>2004-09-18</td>
+			</tr>
+
+			<tr>
+				<td>20</td>
+				<td>Vidit Santosh Gujrathi</td>
+				<td>Male</td>
+				<td>2731</td>
+				<td>India</td>
+				<td>1994-10-24</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+
+	<!-- Bottom Section -->
+	<!-- Contacts -->
+	<h4>Contact Information</h4>
+
+	<nav class = "Contacts">
+		<a href = "">Linkedin</a>
+		<a href = "">GitHub</a>
+		<a href = "">Personal Website</a>
+		<a href = "">Personal Social Media Site</a>
+		<a href = "">History Site</a>
+	</nav>
+
+	<script type="text/javascript" src="ChangeImage.js"></script>
+	<script type="text/javascript" src="RatingsTable.js"></script>
+	<script type="text/javascript" src="SwitchLinks.js"></script>
+	<script type="text/javascript" src="HoverColor.js"></script>
+
+</body>
+
+</html>
